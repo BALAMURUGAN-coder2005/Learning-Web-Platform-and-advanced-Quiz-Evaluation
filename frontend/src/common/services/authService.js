@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:5000/api/auth';
+const API_BASE_URL = 'https://learning-web-platform-and-advanced-quiz.onrender.com/api';
 
 const authService = {
   register: async (userData) => {
