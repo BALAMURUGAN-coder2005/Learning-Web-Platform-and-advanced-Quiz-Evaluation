@@ -4,7 +4,7 @@ const API_BASE_URL = 'https://learning-web-platform-and-advanced-quiz.onrender.c
 
 const authService = {
   register: async (userData) => {
-    const response = await axios.post(`${API_BASE_URL}/register`, userData);
+    const response = await axios.post(`${API_BASE_URL}/auth/register`, userData);
     if (response.data.token) {
       localStorage.setItem('token', response.data.token);
       localStorage.setItem('user', JSON.stringify(response.data.user));
@@ -13,7 +13,7 @@ const authService = {
   },
 
   login: async (credentials) => {
-    const response = await axios.post(`${API_BASE_URL}/login`, credentials);
+    const response = await axios.post(`${API_BASE_URL}/auth/login`, credentials);
     if (response.data.token) {
       localStorage.setItem('token', response.data.token);
       localStorage.setItem('user', JSON.stringify(response.data.user));
