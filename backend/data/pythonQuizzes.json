@@ -1,0 +1,87 @@
+[
+  {
+    "question": "What is the correct way to assign the value 5 to a variable named 'x' in Python?",
+    "options": ["x = 5", "int x = 5", "x := 5", "x == 5"],
+    "correctAnswer": "x = 5",
+    "language": "Python",
+    "topic": "Variables",
+    "difficulty": "Easy",
+    "type": "topic",
+    "explanation": "In Python, you create a variable and assign a value to it using the '=' operator. You do not need to declare the data type.",
+    "wrongExplanations": {
+      "int x = 5": "Python is dynamically typed and does not use type keywords like 'int' during assignment.",
+      "x := 5": "':=' is the walrus operator, used for assignments within expressions, not for basic variable creation.",
+      "x == 5": "'==' is a comparison operator used to check if two values are equal, not to assign a value."
+    },
+    "source": "https://www.w3schools.com/python/python_variables.asp",
+    "resource": "W3Schools: Python Variables"
+  },
+  {
+    "question": "Which of the following is a VALID variable name in Python?",
+    "options": ["2myvar", "my-var", "my_var", "my var"],
+    "correctAnswer": "my_var",
+    "language": "Python",
+    "topic": "Variables",
+    "difficulty": "Easy",
+    "type": "topic",
+    "explanation": "Variable names can contain letters, numbers, and underscores, but they must start with a letter or an underscore.",
+    "wrongExplanations": {
+      "2myvar": "Variable names cannot start with a number.",
+      "my-var": "Variable names cannot contain hyphens (-).",
+      "my var": "Variable names cannot contain spaces."
+    },
+    "source": "https://www.w3schools.com/python/python_variables.asp",
+    "resource": "W3Schools: Python Variables"
+  },
+  {
+    "question": "How does Python treat the variable names 'age' and 'Age'?",
+    "options": ["They are the same variable", "They are two different variables", "Python will throw an error", "They are only different if they have different values"],
+    "correctAnswer": "They are two different variables",
+    "language": "Python",
+    "topic": "Variables",
+    "difficulty": "Easy",
+    "type": "topic",
+    "explanation": "Python is case-sensitive, meaning it treats uppercase and lowercase letters as different characters.",
+    "wrongExplanations": {
+      "They are the same variable": "Because Python is case-sensitive, 'a' and 'A' are not the same.",
+      "Python will throw an error": "It is perfectly legal to have both 'age' and 'Age' in the same program.",
+      "They are only different if they have different values": "Case sensitivity is based on the name itself, regardless of the value stored."
+    },
+    "source": "https://www.w3schools.com/python/python_variables.asp",
+    "resource": "W3Schools: Python Variables"
+  },
+  {
+    "question": "Which command is used to assign the same value to multiple variables (x, y, and z) in one line?",
+    "options": ["x, y, z = 10", "x = 10, y = 10, z = 10", "x = y = z = 10", "x; y; z = 10"],
+    "correctAnswer": "x = y = z = 10",
+    "language": "Python",
+    "topic": "Variables",
+    "difficulty": "Easy",
+    "type": "topic",
+    "explanation": "Python allows you to assign the same value to multiple variables in one line using chained assignment.",
+    "wrongExplanations": {
+      "x, y, z = 10": "This syntax expects a collection of three values on the right side (e.g., 10, 20, 30).",
+      "x = 10, y = 10, z = 10": "This is invalid syntax for a single line assignment in Python.",
+      "x; y; z = 10": "Semicolons separate statements but do not link assignments to the same value."
+    },
+    "source": "https://www.w3schools.com/python/python_variables.asp",
+    "resource": "W3Schools: Python Variables"
+  },
+  {
+    "question": "What happens if you assign a string value to a variable that previously held an integer?",
+    "options": ["Python throws a TypeError", "The variable name is deleted", "The variable now holds the string value", "The variable keeps the integer value"],
+    "correctAnswer": "The variable now holds the string value",
+    "language": "Python",
+    "topic": "Variables",
+    "difficulty": "Easy",
+    "type": "topic",
+    "explanation": "Python variables are not bound to a specific data type; you can change the type of data a variable holds at any time.",
+    "wrongExplanations": {
+      "Python throws a TypeError": "Python's dynamic typing allows variables to change types without errors.",
+      "The variable name is deleted": "The variable is not deleted; its content and type are simply updated.",
+      "The variable keeps the integer value": "The new assignment overwrites the old value completely."
+    },
+    "source": "https://www.w3schools.com/python/python_variables.asp",
+    "resource": "W3Schools: Python Variables"
+  }
+]
